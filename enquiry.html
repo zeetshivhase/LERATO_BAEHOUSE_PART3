@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cake Order Form | Lerato Bakehouse</title>
+
+    <meta name="description"
+        content="Order beautiful and delicious cakes from Lerato Bakehouse. Choose your cake type, flavour and occasion.">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="cake-order-page">
+
+    <main class="cake-order-container">
+
+        <!-- FORM HEADING -->
+        <div class="cake-order-header">
+
+            <div class="cake-decoration">
+                🧁 🎂 🧁
+            </div>
+
+            <div>
+                <h1>Cake Order Form</h1>
+                <p>Lerato Bakehouse</p>
+            </div>
+
+        </div>
+
+
+        <!-- ORDER FORM -->
+        <form class="cake-order-form" id="cakeOrderForm">
+
+            <!-- CAKE TYPE -->
+            <h3>Select your cake type</h3>
+
+            <div class="cake-options">
+
+                <label>
+                    <input type="radio" name="cakeType" value="Birthday Cake" required>
+                    By Type
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeType" value="Chocolate Cake">
+                    By Flavour
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeType" value="Custom Cake">
+                    By City
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeType" value="Occasion Cake">
+                    By Occasion
+                </label>
+
+            </div>
+
+
+            <!-- CAKE FLAVOUR -->
+            <h3>Select your cake flavour</h3>
+
+            <div class="cake-options">
+
+                <label>
+                    <input type="radio" name="flavour" value="Vanilla" required>
+                    Vanilla
+                </label>
+
+                <label>
+                    <input type="radio" name="flavour" value="Chocolate">
+                    Chocolate
+                </label>
+
+                <label>
+                    <input type="radio" name="flavour" value="Strawberry">
+                    Strawberry
+                </label>
+
+                <label>
+                    <input type="radio" name="flavour" value="Red Velvet">
+                    Red Velvet
+                </label>
+
+            </div>
+
+
+            <!-- CAKE OCCASION -->
+            <h3>Select your occasion</h3>
+
+            <div class="cake-options">
+
+                <label>
+                    <input type="radio" name="occasion" value="Birthday" required>
+                    Birthday
+                </label>
+
+                <label>
+                    <input type="radio" name="occasion" value="Wedding">
+                    Wedding
+                </label>
+
+                <label>
+                    <input type="radio" name="occasion" value="Anniversary">
+                    Anniversary
+                </label>
+
+                <label>
+                    <input type="radio" name="occasion" value="Graduation">
+                    Graduation
+                </label>
+
+                <label>
+                    <input type="radio" name="occasion" value="Other">
+                    Other
+                </label>
+
+            </div>
+
+
+            <!-- CAKE MESSAGE -->
+            <h3>Select message on cake</h3>
+
+            <div class="cake-options">
+
+                <label>
+                    <input type="radio" name="cakeMessage" value="I am sorry">
+                    I am sorry
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeMessage" value="1st Anniversary">
+                    1st Anniversary
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeMessage" value="50th Anniversary">
+                    50th Anniversary
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeMessage" value="25th Birthday">
+                    25th Birthday
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeMessage" value="10th Birthday">
+                    10th Birthday
+                </label>
+
+                <label>
+                    <input type="radio" name="cakeMessage" value="Thank You">
+                    Thank You
+                </label>
+
+            </div>
+
+
+            <!-- CUSTOM MESSAGE -->
+            <h3>Write your own message on the cake</h3>
+
+            <textarea name="customMessage" placeholder="Write your cake message here..." rows="3"></textarea>
+
+
+            <!-- CUSTOMER NAME -->
+            <h3>Your Name</h3>
+
+            <div class="cake-name-fields">
+
+                <input type="text" name="firstName" placeholder="First Name" required>
+
+                <input type="text" name="lastName" placeholder="Last Name" required>
+
+            </div>
+
+
+            <!-- CONTACT DETAILS -->
+            <h3>Your Contact Details</h3>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+
+
+            <!-- ORDER DETAILS -->
+            <h3>Order Details</h3>
+
+            <label for="cakeSize">Select Cake Size</label>
+
+            <select name="cakeSize" id="cakeSize" required>
+                <option value="">Choose cake size</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Extra Large">Extra Large</option>
+            </select>
+
+            <label for="quantity">Quantity</label>
+
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="orderDate">Date Required</label>
+
+            <input type="date" id="orderDate" name="orderDate" required>
+
+
+            <!-- ADDITIONAL INFORMATION -->
+            <h3>Additional Information</h3>
+
+            <textarea name="additionalInfo" rows="4" placeholder="Any special instructions for your cake?">
+            </textarea>
+
+
+            <!-- SUBMIT -->
+            <div class="cake-submit-area">
+
+                <button type="submit">
+                    SUBMIT ORDER
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Z_TSHIVHASE_ST10522041_LERATO-BAKEHOUSE_WEDE5020_POE.github.io/Lerato-Bakehouse/sitemap.xml

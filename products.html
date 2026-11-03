@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lerato Bakehouse | Products</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lerato Bakehouse</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Our Products</h2>
+            <input type="text" id="product-search" placeholder="Search for a product..."
+                aria-label="Search for a product">
+
+            <p id="no-results" hidden>No products found.</p>
+
+
+
+            <p>Choose from our delicious freshly baked products.</p>
+        </section>
+
+        <!-- PRODUCT CARDS -->
+
+        <section class="grid">
+
+            <div class="grid-item product-card">
+                <img src="images/chocolateCake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and delicious chocolate cake.</p>
+                <p><strong>R250</strong></p>
+                <button class="cart-button" data-name="Chocolate Cake" data-price="250">
+                    🛒 Add to Cart
+                </button>
+            </div>
+
+            <div class="grid-item product-card">
+                <img src="images/cake.jpg" alt="Vanilla Cake">
+                <h3>Vanilla Cake</h3>
+                <p>Soft and delicious vanilla cake.</p>
+                <p><strong>R230</strong></p>
+                <button class="cart-button" data-name="Vanilla Cake" data-price="230">
+                    🛒 Add to Cart
+                </button>
+            </div>
+
+            <div class="grid-item product-card">
+                <img src="images/muffinsCupcakes.jpg" alt="Cupcakes">
+                <h3>Cupcakes</h3>
+                <p>Fresh cupcakes perfect for celebrations.</p>
+                <p><strong>R120</strong></p>
+                <button class="cart-button" data-name="Cupcakes" data-price="120">
+                    🛒 Add to Cart
+                </button>
+            </div>
+
+            <div class="grid-item product-card">
+                <img src="images/pastries.jpg" alt="Fresh Pastries">
+                <h3>Fresh Pastries</h3>
+                <p>Delicious pastries baked fresh every day.</p>
+                <p><strong>R80</strong></p>
+                <button class="cart-button" data-name="Fresh Pastries" data-price="80">
+                    🛒 Add to Cart
+                </button>
+            </div>
+
+            <div class="grid-item product-card ">
+                <img src="images/chocolatechipcookies.jpg" alt="Chocolate Chip Cookies">
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Sweet and crunchy homemade cookies.</p>
+                <p><strong>R60</strong></p>
+                <button class="cart-button" data-name="Chocolate Chip Cookies" data-price="60">
+                    🛒 Add to Cart
+                </button>
+            </div>
+
+            <div class="grid-item product-card">
+                <img src="images/FRESH BREAD.jpg" alt="Fresh Bread">
+                <h3>Fresh Bread</h3>
+                <p>Freshly baked bread for everyday enjoyment.</p>
+                <p><strong>R35</strong></p>
+                <button class="cart-button" data-name="Fresh Bread" data-price="35">
+                    🛒 Add to Cart
+                </button>
+            </div>
+
+        </section>
+
+        <!-- SHOPPING CART -->
+
+        <section class="welcome">
+            <h2>🛒 Shopping Cart</h2>
+
+            <ul id="cart-items">
+                <li>Your cart is empty.</li>
+            </ul>
+
+            <h3>Total: R<span id="cart-total">0</span></h3>
+
+            <button type="button" id="clear-cart" class="cart-button">
+                Clear Cart
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lerato Bakehouse. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

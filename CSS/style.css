@@ -1,0 +1,1469 @@
+/* =================================
+   LERATO BAKEHOUSE - WEBSITE STYLES
+   ================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f3;
+    color: #49352d;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #8b4a36;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #f2c6a0;
+    color: #49352d;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background-color: #f8d9c5;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* WELCOME SECTION */
+
+.welcome {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome h2 {
+    margin-bottom: 15px;
+}
+
+/* GENERAL BUTTON */
+
+.button {
+    display: inline-block;
+    background-color: #8b4a36;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #633324;
+}
+
+/* PRODUCT GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    min-width: 0;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.grid-item h3 {
+    color: #8b4a36;
+    margin-bottom: 8px;
+}
+
+.grid-item p {
+    margin-bottom: 8px;
+}
+
+/* SHOPPING CART BUTTONS */
+
+.cart-button {
+    background-color: #8b4a36;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cart-button:hover,
+.cart-button:focus {
+    background-color: #633324;
+}
+
+/* SHOPPING CART */
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#cart-items li {
+    background-color: #fff0e5;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+#cart-total {
+    color: #8b4a36;
+}
+
+/* IMAGES ON OTHER PAGES */
+
+.cake-image {
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ENQUIRY AND CONTACT FORMS */
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #8b4a36;
+}
+
+/* SOCIAL MEDIA */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #8b4a36;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: #f2c6a0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #8b4a36;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .grid-item img {
+        height: 200px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome {
+        padding: 25px 15px;
+    }
+}
+
+/* CLEAN HOME PAGE DESIGN */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 8%;
+    background-color: #f8d9c5;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: #8b4a36;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.cake-image {
+    width: 100%;
+    max-width: 380px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.featured {
+    padding: 35px 0;
+    text-align: center;
+}
+
+.featured h2 {
+    color: #8b4a36;
+    margin-bottom: 20px;
+}
+
+.featured .grid-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.featured .grid-item .button {
+    margin-top: 10px;
+}
+
+/* HOME PAGE ON MOBILE */
+
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .cake-image {
+        max-width: 100%;
+        height: 220px;
+    }
+}
+
+/* ABOUT PAGE */
+
+.about-hero {
+    background-color: #f8d9c5;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.about-hero h2 {
+    color: #8b4a36;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #8b4a36;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.values-section {
+    background-color: #fff0e5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.values-section h2 {
+    color: #8b4a36;
+    margin-bottom: 25px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.value-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.value-card h3 {
+    color: #8b4a36;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        height: 220px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Page */
+
+.contact-details,
+.social-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff0e5;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contact-details h2,
+.social-section h2 {
+    color: #8b4a36;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin: 15px 0;
+    line-height: 1.7;
+}
+
+.contact-details i {
+    color: #8b4a36;
+    margin-right: 8px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #8b4a36;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #c47b59;
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+
+    .contact-details,
+    .social-section {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+}
+
+/* Form validation error messages */
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: -8px;
+    font-weight: bold;
+}
+
+/* Form success messages */
+#form-success,
+#contact-success {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Highlight invalid form fields */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: #c0392b;
+}
+
+/* =================================
+   LERATO BAKEHOUSE CONTACT PAGE
+================================= */
+
+.contact-header {
+    background: #6e4c34;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-logo a {
+    color: #eee2e0;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact-nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-nav a {
+    text-decoration: none;
+    color: #fa7bbb;
+    font-size: 14px;
+    transition: 0.3s;
+}
+/* CONTACT US COLOUR DESIGN */
+
+.contact-page {
+    background-color: #F6DCE5;
+    color: #e0dbe2;
+}
+
+/* Header */
+.contact-page header {
+    background-color: #76558A;
+    color: white;
+}
+
+/* Main sections */
+.contact-page section {
+    background-color: #EADCC8;
+}
+
+/* Contact cards */
+.contact-page .contact-card {
+    background-color: #FFFFFF;
+    border: 2px solid #F0C5D5;
+    border-radius: 15px;
+    color: #ec2fc3;
+}
+
+/* Contact form */
+.contact-page form {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Form headings */
+.contact-page h1,
+.contact-page h2,
+.contact-page h3 {
+    color: #76558A;
+}
+
+/* Input boxes */
+.contact-page input,
+.contact-page textarea {
+    border: 1px solid #e0d9e2;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Buttons */
+.contact-page button {
+    background-color: #76558A;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.contact-page button:hover {
+    background-color: #e4e0e6;
+}
+.contact-nav a:hover,
+.contact-nav a.active {
+    color: #c98250;
+}
+
+
+/* HERO SECTION */
+
+.contact-hero {
+    background: #9c1574;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    color: #263b42;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-hero p {
+    color: #777;
+    max-width: 550px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* MAIN CONTACT SECTION */
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    padding: 55px 8%;
+    background: #49083b;
+}
+
+.contact-left {
+    width: 100%;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.contact-card {
+    background: #805040;
+    padding: 25px 12px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 30px;
+    color: #e9e1da;
+    margin-bottom: 12px;
+}
+
+.contact-card h3 {
+    color: #e6e1de;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    color: #ece8e2;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+
+/* MAP */
+
+.contact-map {
+    margin-top: 20px;
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* CONTACT FORM */
+
+.contact-right h2 {
+    color: #94683f;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.contact-description {
+    color: #97527d;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    color: #493331;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #f0e4ee;
+    border-radius: 10px;
+    margin-bottom: 17px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #774c2d;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #774522;
+    color: rgb(243, 235, 241);
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #68423d;
+}
+
+
+/* FOOTER */
+
+.contact-footer {
+    background: #77553f;
+    color: rgba(230, 161, 161, 0.685);
+    padding: 45px 8% 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer-column h2 {
+    color: #a57940c9;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.footer-column h3 {
+    color: #f01dd4;
+    margin-bottom: 18px;
+}
+
+.footer-column p {
+    color: #eee;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    display: block;
+    color: #ece7eb;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.footer-column a:hover {
+    color: #c22c9c;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    border-top: 1px solid #705858;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+
+    .contact-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contact-hero h1 {
+        font-size: 32px;
+    }
+
+    .contact-main {
+        grid-template-columns: 1fr;
+        padding: 35px 6%;
+        gap: 35px;
+    }
+
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .contact-nav {
+        gap: 10px;
+    }
+
+    .contact-nav a {
+        font-size: 12px;
+    }
+
+    .contact-footer {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ===================================
+   LERATO BAKEHOUSE CAKE ORDER FORM
+=================================== */
+
+.cake-order-page {
+    background: #f4d4d5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+    color: #333;
+}
+
+.cake-order-container {
+    max-width: 850px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* FORM HEADER */
+
+.cake-order-header {
+    background: #efc0c1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.cake-decoration {
+    font-size: 65px;
+    text-align: center;
+}
+
+.cake-order-header h1 {
+    color: #e29996;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cake-order-header p {
+    color: #68423d;
+    font-size: 16px;
+}
+
+/* FORM BODY */
+
+.cake-order-form {
+    padding: 45px 8%;
+}
+
+.cake-order-form h3 {
+    color: #49302f;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+.cake-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.cake-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cake-options input[type="radio"] {
+    accent-color: #e56868;
+    width: 18px;
+    height: 18px;
+}
+
+/* TEXT INPUTS */
+
+.cake-order-form input[type="text"],
+.cake-order-form input[type="email"],
+.cake-order-form input[type="tel"],
+.cake-order-form input[type="number"],
+.cake-order-form input[type="date"],
+.cake-order-form select,
+.cake-order-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.cake-order-form textarea {
+    resize: vertical;
+}
+
+.cake-order-form input:focus,
+.cake-order-form select:focus,
+.cake-order-form textarea:focus {
+    outline: none;
+    border-color: #e56868;
+}
+
+/* CUSTOMER NAME */
+
+.cake-name-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* SUBMIT BUTTON */
+
+.cake-submit-area {
+    border-top: 1px solid #eee;
+    margin: 25px -9% -45px;
+    padding: 35px;
+    text-align: center;
+}
+
+.cake-submit-area button {
+    background: #e56868;
+    color: white;
+    border: none;
+    padding: 14px 55px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cake-submit-area button:hover {
+    background: #c94f55;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 600px) {
+
+    .cake-order-page {
+        padding: 15px 10px;
+    }
+
+    .cake-order-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+    }
+
+    .cake-decoration {
+        font-size: 50px;
+    }
+
+    .cake-order-header h1 {
+        font-size: 25px;
+    }
+
+    .cake-order-form {
+        padding: 25px 7%;
+    }
+
+    .cake-options {
+        gap: 15px 8px;
+    }
+
+    .cake-options label {
+        font-size: 13px;
+    }
+
+    .cake-name-fields {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .cake-submit-area {
+        margin-left: -8%;
+        margin-right: -8%;
+        margin-bottom: -25px;
+    }
+}
+
+/* =====================================
+   LERATO BAKEHOUSE HOME PAGE
+===================================== */
+
+.home-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+}
+
+/* HERO BACKGROUND */
+
+.home-hero {
+    background: #590c32;
+    color: white;
+    min-height: 650px;
+    margin: 20px auto;
+    width: 92%;
+    max-width: 1400px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* HEADER */
+
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 35px;
+    position: relative;
+    z-index: 5;
+}
+
+.home-logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.1;
+}
+
+.home-logo span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.home-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.home-nav a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.home-nav a:hover {
+    color: #f4a6c1;
+}
+
+.home-contact {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* HERO CONTENT */
+
+.home-hero-content {
+    position: relative;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-circle {
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    background: #841348;
+    border-radius: 50%;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-main {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.hero-main h1 {
+    color: #fff0f5;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 0 0 15px;
+}
+
+.main-cake {
+    width: 390px;
+    height: 290px;
+    object-fit: contain;
+    position: relative;
+    z-index: 3;
+}
+
+.side-cake {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
+    top: 160px;
+    z-index: 2;
+}
+
+.left-cake {
+    left: 1%;
+}
+
+.right-cake {
+    right: 1%;
+}
+
+.order-button {
+    display: inline-block;
+    background: white;
+    color: #590c32;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 25px;
+    font-size: 13px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.order-button:hover {
+    background: #f4a6c1;
+    transform: translateY(-3px);
+}
+
+/* ABOUT SECTION */
+
+.home-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff0f5;
+    margin: 0 auto;
+    width: 92%;
+    max-width: 1400px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.about-content {
+    padding: 45px;
+    align-self: center;
+}
+
+.about-content h2 {
+    color: #590c32;
+    font-size: 30px;
+}
+
+.about-content p {
+    color: #6b535c;
+    line-height: 1.8;
+}
+
+.about-button {
+    display: inline-block;
+    background: #841348;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+/* PRODUCTS */
+
+.home-products {
+    text-align: center;
+    padding: 65px 6%;
+    background: white;
+}
+
+.home-products h2 {
+    color: #590c32;
+    font-size: 32px;
+}
+
+.home-products>p {
+    color: #777;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+.home-product-card {
+    background: #fff0f5;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.home-product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.home-product-card h3 {
+    color: #590c32;
+}
+
+.home-product-card p {
+    color: #777;
+    padding: 0 10px;
+}
+
+/* ORDER SECTION */
+
+.home-order {
+    text-align: center;
+    padding: 65px 20px;
+    background: #f2c6d5;
+}
+
+.home-order h2 {
+    color: #590c32;
+    font-size: 30px;
+}
+
+.home-order p {
+    color: #68423d;
+}
+
+/* FOOTER */
+
+.home-footer {
+    background: #390b24;
+    color: white;
+    padding: 45px 7% 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+.home-footer h2,
+.home-footer h3 {
+    color: #f2c6d5;
+}
+
+.home-footer p,
+.home-footer a {
+    color: #eee;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.home-footer a {
+    display: block;
+    text-decoration: none;
+}
+
+.home-copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    border-top: 1px solid #70405a;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .home-hero {
+        width: 96%;
+        min-height: 560px;
+    }
+
+    .home-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .home-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .home-hero-content {
+        height: 430px;
+    }
+
+    .hero-circle {
+        width: 310px;
+        height: 310px;
+        top: 45px;
+    }
+
+    .hero-main h1 {
+        font-size: 25px;
+    }
+
+    .main-cake {
+        width: 270px;
+        height: 220px;
+    }
+
+    .side-cake {
+        width: 100px;
+        height: 130px;
+        top: 180px;
+    }
+
+    .left-cake {
+        left: 0;
+    }
+
+    .right-cake {
+        right: 0;
+    }
+
+    .home-about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        padding: 25px;
+    }
+
+    .product-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .home-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .home-copyright {
+        grid-column: 1;
+    }
+}
+
